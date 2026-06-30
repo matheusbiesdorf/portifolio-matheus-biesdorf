@@ -1,6 +1,7 @@
 import './App.css';
 import TechSection from './components/TechSection/TechSection';
 import ProjectsSection from './components/ProjectsSection/ProjectsSection';
+import LinksSection from './components/LinksSection/LinksSection';
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
       <TechSection />
 
       {/* <ProjectsSection /> */}
+
+      <LinksSection />
     </main>
   );
 }

@@ -1,0 +1,126 @@
+.links-section {
+  width: 100%;
+  min-height: 80vh;
+  padding: 96px 0;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links-container {
+  width: min(1120px, 90%);
+}
+
+.links-header {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.links-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #61dafb;
+  margin-bottom: 14px;
+}
+
+.links-header h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.links-header p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #d7d7d7;
+}
+
+.links-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.link-card {
+  min-height: 180px;
+  padding: 28px;
+  border-radius: 22px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(97, 218, 251, 0.6);
+  background: rgba(97, 218, 251, 0.08);
+}
+
+.link-card img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.link-card h3 {
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.link-card p {
+  font-size: 1rem;
+  color: #d7d7d7;
+  line-height: 1.5;
+}
+
+.pdf-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: #61dafb;
+  color: #111111;
+  font-size: 0.95rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .links-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .link-card {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .links-section {
+    min-height: auto;
+    padding: 72px 0;
+  }
+
+  .links-header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .link-card {
+    align-items: center;
+    text-align: center;
+  }
+}
