@@ -1,4 +1,5 @@
 import './App.css';
+import TechSection from './components/TechSection/TechSection';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <TechSection />
     </main>
   );
 }
