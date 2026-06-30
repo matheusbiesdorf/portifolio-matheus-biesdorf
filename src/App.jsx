@@ -1,5 +1,6 @@
 import './App.css';
 import TechSection from './components/TechSection/TechSection';
+import ProjectsSection from './components/ProjectsSection/ProjectsSection';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
       </section>
 
       <TechSection />
+
+      {/* <ProjectsSection /> */}
     </main>
   );
 }
